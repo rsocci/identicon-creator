@@ -1,0 +1,31 @@
+body {
+	font-family: sans-serif;
+	color: #5a5a5a;
+}
+
+.container {
+	width: 300px;
+	margin: 0 auto;
+}
+
+h1 {
+	margin-left: 20px;
+}
+
+.field {
+	margin-bottom: 15px;
+}
+
+input {
+	width: 98%;
+	padding: 4px;
+	border-radius: 4px;
+	moz-border-radius: 4px;
+}
+
+#identicon-img {
+	margin-top: 42px;
+	margin-left: 50%;
+	position: relative;
+	left: -75px;
+}

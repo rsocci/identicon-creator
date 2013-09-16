@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Identicons</title>
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+	<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</head>
+<body>
+
+	<div class="container">
+		<h1>Identicon creator</h1>
+
+		<div class="field">
+			<input type="text" id="text" placeholder="Enter your text here">
+		</div>
+
+		<div class="field">
+			<label for="size">Size (n x n): </label>
+			<input type="number" id="size" value="150">
+		</div>
+
+		<div class="field">
+			<label for="format">Image format: <label>
+			<select id="format">
+				<option value="jpeg">jpeg</option>
+				<option value="png">png</option>
+			</select>
+		</div>
+
+	</div>
+
+	<img id="identicon-img" src="{{ url_for('static', filename='img/placeholder.jpg') }}">
+
+</body>
+</html>
